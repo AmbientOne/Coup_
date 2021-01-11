@@ -34,3 +34,16 @@
 /Users/ambient/RiderProjects/Coup/Coup/Coup/obj/Debug/netcoreapp3.1/Coup.dll
 /Users/ambient/RiderProjects/Coup/Coup/Coup/obj/Debug/netcoreapp3.1/Coup.pdb
 /Users/ambient/RiderProjects/Coup/Coup/Coup/obj/Debug/netcoreapp3.1/Coup.genruntimeconfig.cache
+C:\Users\A\Coup\Coup\bin\Debug\netcoreapp3.1\Coup.exe
+C:\Users\A\Coup\Coup\bin\Debug\netcoreapp3.1\Coup.deps.json
+C:\Users\A\Coup\Coup\bin\Debug\netcoreapp3.1\Coup.runtimeconfig.json
+C:\Users\A\Coup\Coup\bin\Debug\netcoreapp3.1\Coup.runtimeconfig.dev.json
+C:\Users\A\Coup\Coup\bin\Debug\netcoreapp3.1\Coup.dll
+C:\Users\A\Coup\Coup\bin\Debug\netcoreapp3.1\Coup.pdb
+C:\Users\A\Coup\Coup\obj\Debug\netcoreapp3.1\Coup.csprojAssemblyReference.cache
+C:\Users\A\Coup\Coup\obj\Debug\netcoreapp3.1\Coup.AssemblyInfoInputs.cache
+C:\Users\A\Coup\Coup\obj\Debug\netcoreapp3.1\Coup.AssemblyInfo.cs
+C:\Users\A\Coup\Coup\obj\Debug\netcoreapp3.1\Coup.csproj.CoreCompileInputs.cache
+C:\Users\A\Coup\Coup\obj\Debug\netcoreapp3.1\Coup.dll
+C:\Users\A\Coup\Coup\obj\Debug\netcoreapp3.1\Coup.pdb
+C:\Users\A\Coup\Coup\obj\Debug\netcoreapp3.1\Coup.genruntimeconfig.cache
