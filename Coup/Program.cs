@@ -5,16 +5,15 @@ namespace Coup
     class Program
     {
         static void Main(string[] args)
-        {
-            List<string> cards = new List<String>()
-            {
-                "Captain", "Ambassador", "Contessa", "Duke", "Assassin",
-                "Captain", "Ambassador", "Contessa", "Duke", "Assassin",
-                "Captain", "Ambassador", "Contessa", "Duke", "Assassin"
-            };
-
-            Console.WriteLine(cards[0]);
+        { 
+            
+            Game game = new Game();
+            Player first = new Player("Abdi", game.randomCard(), game.randomCard());
+            game.Shuffle();
+            first.getFirstInfluence();
+            game.showTopCards();
         }
+    
     }
 }
 

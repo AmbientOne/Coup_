@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 
@@ -10,14 +11,28 @@ namespace Coup
     public class Player
     {
         protected int Coins = 0;
-        Dictionary<int, string> map = new Dictionary<int, string>();
-        public Player(string startingCard1, string startingCard2)
+        protected string playerName;
+        
+        
+        protected Dictionary<int, string> map = new Dictionary<int, string>();
+        public Player(string player, string startingCard1, string startingCard2)
         {
+            this.playerName = player;
             map.Add(1, startingCard1);
-            map.Add(1, startingCard2);
+            map.Add(2, startingCard2);
             Coins += 2;
             
         }
+
+        public void getFirstInfluence()
+        {
+            foreach (KeyValuePair<int, string> kvp in map)
+            {
+                Console.WriteLine("First influence is: " + kvp.Value);
+            }
+
+        }
+        
         
         
         
