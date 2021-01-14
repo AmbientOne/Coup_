@@ -10,8 +10,10 @@ namespace Coup
             
             Game game = new Game();
             game.mainScreen();
-            
-            
+
+            Console.WriteLine(game.currentPlayer());
+
+
         }
     
     }
