@@ -10,8 +10,11 @@ namespace Coup
             
             Game game = new Game();
             game.mainScreen();
-
-            Console.WriteLine(game.currentPlayer());
+            while (!game.gameOver())
+            {
+                game.menu();   
+            }
+            Console.WriteLine("Game Over!");
 
 
         }

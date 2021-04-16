@@ -24,8 +24,8 @@ namespace Coup
         //Constructor for Game
         public Game()
         {
-            
-            
+            Shuffle();
+
         }
         
         /*
@@ -95,6 +95,7 @@ namespace Coup
          * Function to see if shuffle is working successfully
          * TO DO: Edit to add accessibility for exchanging
          */
+
         public void showTopCards()
         {
             Console.WriteLine(cards[0] + " " + cards[1]);
@@ -105,17 +106,37 @@ namespace Coup
          */
         public void exchange(Player player)
         {
-            Console.WriteLine("Choose which cards to exchange, when finished exit by typing -1");
-            
-            Console.WriteLine("Cards available: \n1: {0} \n2:{1}", cards[0], cards[1]);
-            Console.WriteLine("Your cards: ");
-            for (int i = 0; i < player.playersCards.Count; i++)
+            var val = 0;
+            while (val != -1)
             {
-                Console.WriteLine(player.playersCards[i]);
+                Console.WriteLine("Choose which cards to exchange, when finished exit by typing -1");
+                Console.WriteLine("Cards available: \n1: {0} \n2:{1}", cards[0], cards[1]);
+                Console.WriteLine("Your cards: ");
+                for (int i = 0; i < player.playersCards.Count; i++)
+                {
+                    Console.WriteLine("{0}: {1}", i+1, player.playersCards[i]);
+                }
+                Console.WriteLine("Which cards would you like to trade: ");
+                val = Console.Read();
+                if (val != -1)
+                {
+                    Console.WriteLine("Which card would you like to replace it with?");
+                    Console.WriteLine("Cards available: \n1: {0} \n2:{1}", cards[0], cards[1]);
+                    var tmp = Console.Read();
+                    var sTmp = player.playersCards[val-1];
+                    player.playersCards[val - 1] = cards[tmp - 1];
+                    cards[tmp - 1] = sTmp;
+                    Console.WriteLine("Exchange successful!");
+                    
+                }
             }
-            
-            
 
+            var rTmp = cards[0];
+            var rTmp2 = cards[1];
+            cards.RemoveAt(0);
+            cards.RemoveAt(1);
+            cards.Add(rTmp);
+            cards.Add(rTmp2);
         }
         /*
          * Main menu:
@@ -165,9 +186,20 @@ namespace Coup
                 }
             }
    
-
+            Console.WriteLine("What would you like to do?");
+            var move = Console.Read();
+            chosenMove(move, playr[0]);
+            movePlayer();
             Console.WriteLine("-------------------------------");
         }
+
+        public void movePlayer()
+        {
+            Player tmpPlayer = playr[0];
+            playr.RemoveAt(0);
+            playr.Add(tmpPlayer);
+        }
+        
 
         /*
          * Main Menu screen: Introduces players and adds their name to a queue
@@ -190,6 +222,10 @@ namespace Coup
             }
         }
 
+        public void chosenMove(int move, Player plyer)
+        {
+            exchange(plyer);
+        }
         public string currentPlayer()
         {
             return playr[0].playerName;
@@ -197,3 +233,8 @@ namespace Coup
         }
     }
 }
+
+
+
+/* Things that need to be added include: Assassination, Exchanging, Revealing Cards, Couping, Calling Bluffs, 
+*/

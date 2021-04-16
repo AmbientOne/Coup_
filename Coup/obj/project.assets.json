@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\A\\.nuget\\packages\\": {}
+    "/Users/ambient/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A\\Coup\\Coup\\Coup.csproj",
+      "projectUniqueName": "/Users/ambient/RiderProjects/Coup/Coup_/Coup/Coup.csproj",
       "projectName": "Coup",
-      "projectPath": "C:\\Users\\A\\Coup\\Coup\\Coup.csproj",
-      "packagesPath": "C:\\Users\\A\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A\\Coup\\Coup\\obj\\",
+      "projectPath": "/Users/ambient/RiderProjects/Coup/Coup_/Coup/Coup.csproj",
+      "packagesPath": "/Users/ambient/.nuget/packages/",
+      "outputPath": "/Users/ambient/RiderProjects/Coup/Coup_/Coup/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\A\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/ambient/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -56,7 +56,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
       }
     }
   }
